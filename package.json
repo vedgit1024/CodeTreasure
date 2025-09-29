@@ -1,0 +1,32 @@
+{
+  "name": "CodeTreasure",
+  "version": "1.0.0",
+  "description": "A DSA problem search engine leveraging web scraping, efficient data storage, and a Node.js backend implementing TF-IDF to provide relevant results for user queries via a web interface.",
+  "homepage": "https://github.com/vedgit1024/CodeTreasure#readme",
+  "bugs": {
+    "url": "https://github.com/vedgit1024/CodeTreasure/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vedgit1024/CodeTreasure.git"
+  },
+  "license": "UNLICENSED",
+  "author": "Kumar Vedant",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "scrape": "node scrape.js",
+    "merge": "node utils/merge.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "natural": "^8.1.0",
+    "puppeteer": "^24.10.2",
+    "stopword": "^3.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
